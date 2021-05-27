@@ -1,6 +1,10 @@
 /*** import SCSS ***/
 
-@import url("style/general.scss");
-@import url("style/card.scss");
-@import url("style/img.scss");
-@import url("style/section.scss");
+@import "./style/base/general";
+@import "./style/components/card";
+@import "./style/components/img";
+@import "./style/layouts/header";
+@import "./style/layouts/footer";
+@import "./style/layouts/section.scss";
+@import "./style/utils/variables";
+@import "style/section.scss";
