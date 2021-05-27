@@ -1,0 +1,68 @@
+/*** import SCSS ***/
+/***colors***/
+/***polices***/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+h1, h2, h3, p, a {
+  font-family: Roboto;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+/***header***/
+.logoHeader {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+}
+
+/***fonctionnement***/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement button {
+  border-radius: 15px;
+}
+
+/***restaurants***/
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
