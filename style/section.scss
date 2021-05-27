@@ -1,0 +1,51 @@
+/***header***/
+
+.logoHeader {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+form input {
+    width: 100%;
+}
+
+
+/***fonctionnement***/
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+}
+
+.fonctionnement button {
+    border-radius: 15px;
+}
+
+
+/***restaurants***/
+
+.restaurants a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
