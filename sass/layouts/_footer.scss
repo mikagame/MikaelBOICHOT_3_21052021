@@ -1,12 +1,19 @@
+/*** Footer ***/
+
 footer {
     color: white;
     background-color: black;
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $primary;
+        }
+    }
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
+
+
 
 footer ul {
     list-style: none;

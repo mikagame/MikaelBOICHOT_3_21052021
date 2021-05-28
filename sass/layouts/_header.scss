@@ -1,6 +1,25 @@
 /***header***/
 
-.logoHeader {
-    display: block;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        a {
+            position: absolute;
+            left: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: $primary;
+            }
+        }
+        img {
+            height: 28px;
+        }
 }
+
+
+
+
+

@@ -1,11 +1,10 @@
-
-
 form {
     display: flex;
     justify-content: center;
     text-align: center;
 
 }
+
 form input {
     width: 100%;
 }
@@ -16,18 +15,29 @@ form input {
 .fonctionnement {
     display: flex;
     flex-direction: column;
+    margin: 0 15px 0 15px;
+    button {
+        border: none;
+        border-radius: 15px;
+        padding: 20px 0 20px 0;
+        margin: 10px  10px;
+        box-shadow: 0 8px 8px #f6f6f6;
+    }
 }
 
-.fonctionnement button {
-    border-radius: 15px;
-}
+
 
 
 /***restaurants***/
 
-.restaurants a {
+.restaurants {
+    background-color: f6f6f6;
+    padding: 20px 15px 0px 15px;
+    a {
     text-decoration: none;
     color: black;
+    }
+    
 }
 
 
