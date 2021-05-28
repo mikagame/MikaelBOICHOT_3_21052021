@@ -12,18 +12,6 @@ h1, h2, h3, p, a {
   font-family: Roboto;
 }
 
-.title-home {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.title-home h1 {
-  margin: 0 78px 0 60px;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-
 .card {
   border-radius: 15px;
   background-color: white;
@@ -81,16 +69,6 @@ footer ul {
   list-style: none;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-form input {
-  width: 100%;
-}
-
 /***fonctionnement***/
 .fonctionnement {
   display: flex;
@@ -116,16 +94,42 @@ form input {
 }
 
 /*** Home ***/
+form {
+  margin-bottom: 35px;
+}
+form i {
+  position: relative;
+  left: 104px;
+  top: 30px;
+}
+form input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #f2f2f2;
+}
+form input::placeholder {
+  text-align: center;
+  font-size: 15px;
+  opacity: 100%;
+}
+
 .title-home {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .title-home h1 {
   margin: 0 78px 0 60px;
   font-weight: bold;
   font-size: 24px;
-  text-align: center;
+}
+.title-home p {
+  font-size: 18px;
+}
+.title-home button {
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
