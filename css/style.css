@@ -95,18 +95,12 @@ footer ul {
 
 /*** Home ***/
 form {
-  margin-bottom: 35px;
-}
-form i {
-  position: relative;
-  left: 104px;
-  top: 30px;
+  background-color: #f2f2f2;
+  margin-top: 15px;
 }
 form input {
-  width: 100%;
   padding: 14px;
   border: none;
-  background-color: #f2f2f2;
 }
 form input::placeholder {
   text-align: center;
