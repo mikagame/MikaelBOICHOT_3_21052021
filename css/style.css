@@ -12,6 +12,10 @@ h1, h2, h3, p, a {
   font-family: Roboto;
 }
 
+.menu h1 {
+  font-family: Shrikhand;
+}
+
 .card {
   border-radius: 15px;
   background-color: white;
@@ -91,6 +95,20 @@ footer ul {
 .restaurants a {
   text-decoration: none;
   color: black;
+}
+
+/*** menu ***/
+.menu {
+  margin: 0 15px 0 15px;
+}
+.menu__btn {
+  border-radius: 15px;
+}
+
+/*** entree ***/
+.entree, .dish, .dessert {
+  display: flex;
+  flex-direction: column;
 }
 
 /*** Home ***/
