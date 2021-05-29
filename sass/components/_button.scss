@@ -1,0 +1,50 @@
+/*** button ***/
+
+.btn {    
+    &__home {
+border-radius: 10px;
+    }
+    &__menu {
+        border-radius: 15px;
+    }
+    &__command {
+        border-radius: 15px;
+    }
+    &__fonctionnement {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;        
+        p {
+            position: relative;
+            left: 30px;
+            flex-shrink: 0;
+            font-size: 12px;
+            color: white;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa-mobile-alt{
+          margin-right: 9.25px;
+        }
+        .fa-list-ul {
+            margin-right: 3.25px;
+        }
+        i {
+            position:relative;
+            left: 60px;
+        }
+        button {           
+            flex-shrink: 0;
+            width: 300px;
+            padding: 20px 0 20px 0;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 5px 5px 5px grey;
+        }
+    }
+}

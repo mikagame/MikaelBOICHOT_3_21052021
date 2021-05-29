@@ -1,16 +1,14 @@
 /***fonctionnement***/
 
 .fonctionnement {
+    margin: 0 15px 0 15px;
+}
+
+.group-f {
     display: flex;
     flex-direction: column;
-    margin: 0 15px 0 15px;
-    button {
-        border: none;
-        border-radius: 15px;
-        padding: 20px 0 20px 0;
-        margin: 10px  10px;
-        box-shadow: 0 8px 8px #f6f6f6;
-    }
+    align-items: flex-start;
+   
 }
 
 /***restaurants***/
@@ -21,18 +19,13 @@
     a {
     text-decoration: none;
     color: black;
-    }
-    
+    }    
 }
 
 /*** menu ***/
 
 .menu {
-    margin: 0 15px 0 15px;
-    &__btn {
-        border-radius: 15px;
-    }
-    
+    margin: 0 15px 0 15px;    
 }
     /*** entree ***/
 

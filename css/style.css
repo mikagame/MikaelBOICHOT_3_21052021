@@ -36,6 +36,54 @@ h1, h2, h3, p, a {
   margin-top: 15px;
 }
 
+/*** button ***/
+.btn__home {
+  border-radius: 10px;
+}
+.btn__menu {
+  border-radius: 15px;
+}
+.btn__command {
+  border-radius: 15px;
+}
+.btn__fonctionnement {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.btn__fonctionnement p {
+  position: relative;
+  left: 30px;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: white;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__fonctionnement .fa-mobile-alt {
+  margin-right: 9.25px;
+}
+.btn__fonctionnement .fa-list-ul {
+  margin-right: 3.25px;
+}
+.btn__fonctionnement i {
+  position: relative;
+  left: 60px;
+}
+.btn__fonctionnement button {
+  flex-shrink: 0;
+  width: 300px;
+  padding: 20px 0 20px 0;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 5px 5px 5px grey;
+}
+
 /***header***/
 header {
   display: flex;
@@ -75,16 +123,13 @@ footer ul {
 
 /***fonctionnement***/
 .fonctionnement {
-  display: flex;
-  flex-direction: column;
   margin: 0 15px 0 15px;
 }
-.fonctionnement button {
-  border: none;
-  border-radius: 15px;
-  padding: 20px 0 20px 0;
-  margin: 10px 10px;
-  box-shadow: 0 8px 8px #f6f6f6;
+
+.group-f {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /***restaurants***/
@@ -100,9 +145,6 @@ footer ul {
 /*** menu ***/
 .menu {
   margin: 0 15px 0 15px;
-}
-.menu__btn {
-  border-radius: 15px;
 }
 
 /*** entree ***/
@@ -139,9 +181,6 @@ form input::placeholder {
 }
 .title-home p {
   font-size: 18px;
-}
-.title-home button {
-  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
