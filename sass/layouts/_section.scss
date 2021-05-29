@@ -25,5 +25,21 @@
     
 }
 
+/*** menu ***/
+
+.menu {
+    margin: 0 15px 0 15px;
+    &__btn {
+        border-radius: 15px;
+    }
+    
+}
+    /*** entree ***/
+
+.entree, .dish, .dessert {
+    display:flex;
+    flex-direction: column;
+}
+
 
 
