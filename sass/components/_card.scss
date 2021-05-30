@@ -1,17 +1,26 @@
 .card {
     border-radius: 15px;
     background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 17px;
     &__title {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin:0 25px 0px 15px;
+        
         &--column {
             h3 {
-                margin: 0;
+                margin: 10px 0 5px 0;
+                font-size: 18px;
             }
             p {
                 margin: 0;
+                font-size: 17px;
             }
+        }
+        i {
+            font-size: 25px;
         }
     }
     img {
@@ -19,7 +28,7 @@
         border-top-right-radius: 15px;
         object-fit: cover;
         width: 100%;
-        height: 200px;   
+        height: 175px;   
     }
 }
 
