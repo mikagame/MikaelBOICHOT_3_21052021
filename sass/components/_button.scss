@@ -19,14 +19,16 @@
         border-radius: 15px;
     }
     &__fonctionnement {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         display: flex;
-        align-items: center;        
+        align-items: center;
+        position: relative;
+        right: 20px;       
         p {
             position: relative;
             left: 30px;
             flex-shrink: 0;
-            font-size: 12px;
+            font-size: 13px;
             color: white;
             border-radius: 50%;
             height: 22px;
@@ -35,6 +37,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
         .fa-mobile-alt{
           margin-right: 9.25px;
@@ -44,15 +47,20 @@
         }
         i {
             position:relative;
-            left: 60px;
+            left: 50px;
+            font-size: 18px;
+            
         }
         button {           
             flex-shrink: 0;
-            width: 280px;
-            padding: 20px 0 20px 0;
-            border-radius: 15px;
+            width: 300px;
+            padding: 25px 0 25px 0;
+            border-radius: 20px;
             border: none;
-            box-shadow: 5px 5px 5px grey;
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+            font-size: 15px;
+            
         }
     }
 }
