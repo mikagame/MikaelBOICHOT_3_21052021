@@ -1,6 +1,7 @@
 /*** button ***/
 
 .btn {    
+    
     &__home {
         display: flex;
         justify-content: center;
@@ -12,6 +13,7 @@
         color: white;
         background: linear-gradient($secondary, $primary);
         padding: 15px;
+        
     }
     &__menu {
         border-radius: 15px;
@@ -61,8 +63,16 @@
             box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
             font-weight: 700;
             font-size: 15px;
+            &:hover {
+                cursor: pointer;
+            }
             
         }
     }
+    &:hover {
+        cursor: pointer;
+    }
+    
 }
+
 

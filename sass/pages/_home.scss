@@ -1,22 +1,35 @@
 /*** Home ***/
 
 form {
+    i {
+        position: relative;
+        left: 39px;
+        z-index: 1;
+    }
     background-color: #f2f2f2;
-    margin-top: 15px;   
+    padding-top: 2px;
+    margin-top: 15px; 
+    
     display: flex;
     justify-content: center; 
     align-items: center;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2);
     input {  
         background-color: #f2f2f2;     
         padding: 14px;
         border: none;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
+        position: relative;
+        right: 5px;
+
         &::placeholder {
+            justify-content: start;
             text-align: center;
-            font-size: 15px;
+            font-size: 16px;
             opacity: 100%;
         }
+        
     }
 }
 
@@ -25,6 +38,10 @@ form {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: rgba(242, 242, 242, 0.5);
+    padding-top: 35px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
     h1 {
         margin:0 78px 0 60px;
         font-weight: bold;
@@ -32,6 +49,7 @@ form {
     }
     p {
         font-size: 18px;
+        margin-bottom: 30px;
     }
     
 }

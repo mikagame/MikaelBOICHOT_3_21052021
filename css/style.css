@@ -20,7 +20,17 @@ h1, h2, h3, p, a {
   border-radius: 15px;
   background-color: white;
 }
-
+.card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__title--column h3 {
+  margin: 0;
+}
+.card__title--column p {
+  margin: 0;
+}
 .card img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -97,6 +107,12 @@ h1, h2, h3, p, a {
   font-weight: 700;
   font-size: 15px;
 }
+.btn__fonctionnement button:hover {
+  cursor: pointer;
+}
+.btn:hover {
+  cursor: pointer;
+}
 
 /***header***/
 header {
@@ -142,7 +158,7 @@ footer img {
 
 /***fonctionnement***/
 .fonctionnement h2 {
-  margin: 15px;
+  margin: 0 0 40px 20px;
 }
 
 .group-f {
@@ -175,21 +191,31 @@ footer img {
 /*** Home ***/
 form {
   background-color: #f2f2f2;
+  padding-top: 2px;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+form i {
+  position: relative;
+  left: 39px;
+  z-index: 1;
 }
 form input {
   background-color: #f2f2f2;
   padding: 14px;
   border: none;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  position: relative;
+  right: 5px;
 }
 form input::placeholder {
+  justify-content: start;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   opacity: 100%;
 }
 
@@ -198,6 +224,10 @@ form input::placeholder {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  background-color: rgba(242, 242, 242, 0.5);
+  padding-top: 35px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .title-home h1 {
   margin: 0 78px 0 60px;
@@ -206,6 +236,7 @@ form input::placeholder {
 }
 .title-home p {
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
