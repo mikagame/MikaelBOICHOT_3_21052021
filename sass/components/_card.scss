@@ -3,6 +3,7 @@
     background-color: white;
     padding-bottom: 15px;
     margin-bottom: 17px;
+    
     &__title {
         display: flex;
         align-items: center;
@@ -21,7 +22,11 @@
         }
         i {
             font-size: 25px;
+            
         }
+        
+        
+        
     }
     img {
         border-top-left-radius: 15px;

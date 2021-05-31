@@ -12,10 +12,33 @@ h1,h2,h3,p,a {
     font-family: Roboto;
 }
 
-.menu h1 {
-    font-family: Shrikhand;
-}
-    
+.menu {   
+    h1 {
+        font-family: Shrikhand;
+        font-size: 27px;
+        margin: 0 35px 0 0;       
+    }
+    h2 {
+        margin: 0 0 20px 0;       
+        font-size: 17px;
+        font-weight: 400;
+        span {
+            border-bottom: 3px solid $tertiary;
+            padding-bottom: 5px;
+        }
+    }
+    h3 {
+        margin: 0 0 7px 0;
+    }
+    p {
+        margin: 0 10px 0 0;
+        font-size: 14px;
+    }
+    i {
+        font-size: 25px;
+    }
 
+    
+}
 
 

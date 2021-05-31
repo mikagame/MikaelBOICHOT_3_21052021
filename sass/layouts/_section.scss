@@ -26,16 +26,42 @@
     }    
 }
 
+/*** content ***/
+
+.content {
+    position: relative;
+    bottom: 60px;
+}
 /*** menu ***/
 
 .menu {
-    margin: 0 15px 0 15px;    
+    padding: 30px 16px 60px 16px;    
+    background-color: #f2f2f2;
+    z-index: 1;
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 }
     /*** entree ***/
 
 .entree, .dish, .dessert {
     display:flex;
     flex-direction: column;
+}
+
+.entree {
+    margin-bottom: 15px;
+}
+.dish {
+    margin-bottom: 25px;
+}
+.dessert {
+    margin-bottom: 30px;
 }
 
 

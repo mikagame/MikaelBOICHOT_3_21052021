@@ -14,6 +14,27 @@ h1, h2, h3, p, a {
 
 .menu h1 {
   font-family: Shrikhand;
+  font-size: 27px;
+  margin: 0 35px 0 0;
+}
+.menu h2 {
+  margin: 0 0 20px 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+.menu h2 span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+.menu h3 {
+  margin: 0 0 7px 0;
+}
+.menu p {
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+.menu i {
+  font-size: 25px;
 }
 
 .card {
@@ -69,10 +90,32 @@ h1, h2, h3, p, a {
   padding: 15px;
 }
 .btn__menu {
+  border: none;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+.btn__menu--bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .btn__command {
-  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  padding: 15px;
 }
 .btn__fonctionnement {
   margin-bottom: 30px;
@@ -199,15 +242,42 @@ footer img {
   color: black;
 }
 
+/*** content ***/
+.content {
+  position: relative;
+  bottom: 60px;
+}
+
 /*** menu ***/
 .menu {
-  margin: 0 15px 0 15px;
+  padding: 30px 16px 60px 16px;
+  background-color: #f2f2f2;
+  z-index: 1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.menu__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /*** entree ***/
 .entree, .dish, .dessert {
   display: flex;
   flex-direction: column;
+}
+
+.entree {
+  margin-bottom: 15px;
+}
+
+.dish {
+  margin-bottom: 25px;
+}
+
+.dessert {
+  margin-bottom: 30px;
 }
 
 /*** Home ***/

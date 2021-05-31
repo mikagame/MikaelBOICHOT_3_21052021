@@ -10,16 +10,38 @@
         border-radius: 30px;
         border: none;
         color: white;
-        font-weight: 900;
-        
+        font-weight: 900;       
         background: linear-gradient(175deg, $secondary, $primary);
         padding: 15px;        
     }
     &__menu {
+        border: none;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        margin-bottom: 15px;
+        &--bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;           
+        }
     }
     &__command {
-        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        width: 55%;
+        max-width: 300px;
+        margin: auto;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-weight: 900;       
+        background: linear-gradient(175deg, $secondary, $primary);
+        padding: 15px;    
+
     }
     &__fonctionnement {
         margin-bottom: 30px;
