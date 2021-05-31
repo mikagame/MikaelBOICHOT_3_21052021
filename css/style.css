@@ -64,7 +64,8 @@ h1, h2, h3, p, a {
   border-radius: 30px;
   border: none;
   color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 900;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   padding: 15px;
 }
 .btn__menu {
