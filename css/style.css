@@ -216,13 +216,13 @@ form {
   padding-top: 2px;
   margin-top: 15px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 form i {
   position: relative;
-  right: 30px;
+  left: 40px;
   z-index: 1;
 }
 form input {
@@ -232,7 +232,7 @@ form input {
   padding: 5px 0 5px 0;
   margin: 10px 0 10px 0;
   position: relative;
-  right: 10px;
+  left: 55px;
 }
 form input::placeholder {
   text-align: left;
