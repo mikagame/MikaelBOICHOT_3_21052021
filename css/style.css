@@ -15,7 +15,7 @@ h1, h2, h3, p, a {
 .menu h1 {
   font-family: Shrikhand;
   font-size: 27px;
-  margin: 0 35px 0 0;
+  margin: 0 0px 0 20px;
 }
 .menu h2 {
   margin: 0 0 20px 0;
@@ -29,12 +29,19 @@ h1, h2, h3, p, a {
 .menu h3 {
   margin: 0 0 7px 0;
 }
+.menu .short {
+  width: 65%;
+  text-align: left;
+}
 .menu p {
   margin: 0 10px 0 0;
   font-size: 14px;
 }
 .menu i {
   font-size: 25px;
+  position: absolute;
+  right: 35px;
+  margin-bottom: 5px;
 }
 
 .card {
@@ -86,6 +93,7 @@ h1, h2, h3, p, a {
   border: none;
   color: white;
   font-weight: 900;
+  font-size: 16px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   padding: 15px;
 }
@@ -114,6 +122,7 @@ h1, h2, h3, p, a {
   border: none;
   color: white;
   font-weight: 900;
+  font-size: 16px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   padding: 15px;
 }
@@ -121,12 +130,10 @@ h1, h2, h3, p, a {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  position: relative;
-  right: 20px;
 }
 .btn__fonctionnement p {
   position: relative;
-  left: 30px;
+  right: 10px;
   flex-shrink: 0;
   font-size: 13px;
   color: white;
@@ -146,13 +153,19 @@ h1, h2, h3, p, a {
 }
 .btn__fonctionnement i {
   position: relative;
-  left: 50px;
+  left: 20px;
   font-size: 18px;
 }
+.btn__fonctionnement span {
+  position: relative;
+  left: 40px;
+}
 .btn__fonctionnement button {
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-  width: 300px;
-  padding: 25px 0 25px 0;
+  width: 330px;
+  padding: 10px 0 10px 0;
   border-radius: 20px;
   border: none;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
@@ -161,6 +174,7 @@ h1, h2, h3, p, a {
 }
 .btn__fonctionnement button:hover {
   cursor: pointer;
+  background-color: rgba(147, 86, 220, 0.5);
 }
 .btn:hover {
   cursor: pointer;
@@ -220,10 +234,10 @@ footer img {
 
 /***fonctionnement***/
 .fonctionnement {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .fonctionnement h2 {
-  margin: 0 0 30px 20px;
+  margin: 0 0 35px 20px;
 }
 
 .group-f {
@@ -243,23 +257,24 @@ footer img {
 }
 
 /*** content ***/
-.content {
-  position: relative;
-  bottom: 60px;
-}
-
 /*** menu ***/
 .menu {
-  padding: 30px 16px 60px 16px;
+  padding: 40px 16px 60px 16px;
   background-color: #f2f2f2;
   z-index: 1;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 }
 .menu__title {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  padding-top: 35px;
+  position: absolute;
+  top: 280px;
+  left: 0px;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #f2f2f2;
 }
 
 /*** entree ***/

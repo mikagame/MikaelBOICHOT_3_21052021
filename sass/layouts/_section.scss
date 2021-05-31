@@ -1,10 +1,10 @@
 /***fonctionnement***/
 
 .fonctionnement {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
             h2 {
-                margin: 0 0 30px 20px;
+                margin: 0 0 35px 20px;
             }
 }
 
@@ -28,23 +28,28 @@
 
 /*** content ***/
 
-.content {
-    position: relative;
-    bottom: 60px;
-}
+
+
 /*** menu ***/
 
 .menu {
-    padding: 30px 16px 60px 16px;    
+    padding: 40px 16px 60px 16px;    
     background-color: #f2f2f2;
     z-index: 1;
     
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+   
     &__title {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        padding-top: 35px;
+        position: absolute;
+        top: 280px;
+        left: 0px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #f2f2f2;
     }
 }
     /*** entree ***/

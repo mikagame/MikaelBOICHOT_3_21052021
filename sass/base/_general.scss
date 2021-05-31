@@ -16,7 +16,8 @@ h1,h2,h3,p,a {
     h1 {
         font-family: Shrikhand;
         font-size: 27px;
-        margin: 0 35px 0 0;       
+        margin: 0 0px 0 20px;   
+            
     }
     h2 {
         margin: 0 0 20px 0;       
@@ -29,6 +30,11 @@ h1,h2,h3,p,a {
     }
     h3 {
         margin: 0 0 7px 0;
+        
+    }
+    .short  {
+        width: 65%;
+        text-align: left;
     }
     p {
         margin: 0 10px 0 0;
@@ -36,6 +42,11 @@ h1,h2,h3,p,a {
     }
     i {
         font-size: 25px;
+        
+        position:absolute;
+        right: 35px;
+        margin-bottom: 5px;
+        
     }
 
     
