@@ -49,6 +49,8 @@ h1, h2, h3, p, a {
   background-color: white;
   padding-bottom: 15px;
   margin-bottom: 17px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 .card__title {
   display: flex;
@@ -75,6 +77,9 @@ h1, h2, h3, p, a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.card:hover {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .card img {
   border-top-left-radius: 15px;
