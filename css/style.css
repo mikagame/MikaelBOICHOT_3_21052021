@@ -283,6 +283,7 @@ footer img {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    max-width: 660px;
   }
   footer li {
     margin-right: 10px;
@@ -357,7 +358,11 @@ footer img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 30px;
+  }
+
+  .restaurants {
+    padding: 30px 30px 50px 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1110px) {
@@ -365,7 +370,8 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 17px;
+    column-gap: 30px;
+    row-gap: 13px;
   }
 
   .fonctionnement h2, .restaurants h2 {
@@ -376,7 +382,7 @@ footer img {
   .position-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 17px;
+    column-gap: 30px;
   }
 }
 /*** Home ***/
@@ -436,7 +442,7 @@ form input:focus::placeholder {
 }
 .title-home p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin: 0 15px 30px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
