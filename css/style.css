@@ -150,7 +150,7 @@ h1, h2, h3, p, a {
   display: flex;
   align-items: center;
 }
-.btn__fonctionnement p {
+.btn__fonctionnement span {
   position: relative;
   right: 10px;
   flex-shrink: 0;
@@ -175,7 +175,7 @@ h1, h2, h3, p, a {
   left: 20px;
   font-size: 18px;
 }
-.btn__fonctionnement span {
+.btn__fonctionnement p {
   position: relative;
   left: 40px;
 }
@@ -195,6 +195,7 @@ h1, h2, h3, p, a {
   cursor: pointer;
   background-color: rgba(255, 121, 218, 0.2);
   transition: 0.2s;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8);
 }
 .btn__fonctionnement button:hover i {
   color: #9356DC;
