@@ -214,6 +214,18 @@ h1, h2, h3, p, a {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 374px) {
+  .btn__fonctionnement button {
+    width: 270px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn__fonctionnement button {
+    width: 300px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+  }
+}
 /***header***/
 header {
   display: flex;
@@ -266,6 +278,16 @@ footer img {
   margin-left: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  footer li {
+    margin-right: 10px;
+  }
+}
 /***fonctionnement***/
 .fonctionnement {
   margin-bottom: 40px;
@@ -329,6 +351,34 @@ footer img {
   margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .group-f {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1110px) {
+  .position-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 17px;
+  }
+
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1111px) {
+  .position-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 17px;
+  }
+}
 /*** Home ***/
 form {
   background-color: #f2f2f2;

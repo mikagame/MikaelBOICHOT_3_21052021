@@ -12,8 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-}
+} 
+
+
 
 /***restaurants***/
 
@@ -69,5 +70,41 @@
     margin-bottom: 30px;
 }
 
+
+@media only screen and (min-width : 768px) {
+.group-f {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1110px) {
+    
+    .position-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 17px;
+    }
+
+    
+
+    .fonctionnement h2, .restaurants h2 {
+        text-align: center;
+    }
+} 
+
+@media only screen and (min-width : 1111px) {
+    .position-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        column-gap: 17px;
+    }
+
+}
 
 

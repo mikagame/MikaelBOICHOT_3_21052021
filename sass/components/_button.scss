@@ -113,4 +113,21 @@
 
 
 
+@media only screen and (max-width : 374px) {
+    .btn__fonctionnement button {
+        width: 270px;
+    }
+}
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    .btn__fonctionnement button {
+        width: 300px;
+        text-align: center;
+        margin: 0 10px 0 10px;
+    }
+}
+
+
 
