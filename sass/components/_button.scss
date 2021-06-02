@@ -121,6 +121,105 @@
     }    
 }
 
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.btn-menu {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        margin-bottom: 15px;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+
+        &:hover {
+            span, .prix {
+            transform: translateX(-60px);
+                }
+            i {
+                animation: rotation 0.5s ease-in-out ;
+            }
+            .btn-menu__titre , #long {
+                width: 210px;
+            }
+        
+        }
+        &__titre {
+            margin-left: 10px;      
+           white-space: nowrap;
+           max-width: 254px;;
+           
+           
+            h3 {
+                font-size: 18px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+             
+            }
+            #long {
+                width: 270px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p {
+                font-size: 14px;
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            
+            }
+        }
+        &__txt {
+            display: flex;
+            width: 100%;
+            align-items: end;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .prix {
+            transition: 0.4s ease-in-out;
+           position: relative;
+           right: 10px;
+            font-weight: 800;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 60px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            background-color: $tertiary;
+            
+            transition: all .4s ease-in-out;
+            i {  
+            background-color: $tertiary;
+            color: white;
+            font-size: 20px;
+            
+              
+            }
+            
+        }
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0) ;
+    }
+    100% {
+        transform: rotate(360deg) ;
+    }
+}
+
 
 
 @media only screen and (max-width : 374px) {

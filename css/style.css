@@ -37,7 +37,7 @@ h1, h2, h3, p, a {
   margin: 0 10px 0 0;
   font-size: 14px;
 }
-.menu i {
+.menu__title i {
   font-size: 25px;
   position: absolute;
   right: 35px;
@@ -217,6 +217,89 @@ h1, h2, h3, p, a {
   cursor: pointer;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.btn-menu {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.btn-menu:hover span, .btn-menu:hover .prix {
+  transform: translateX(-60px);
+}
+.btn-menu:hover i {
+  animation: rotation 0.5s ease-in-out;
+}
+.btn-menu:hover .btn-menu__titre, .btn-menu:hover #long {
+  width: 210px;
+}
+.btn-menu__titre {
+  margin-left: 10px;
+  white-space: nowrap;
+  max-width: 254px;
+}
+.btn-menu__titre h3 {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-menu__titre #long {
+  width: 270px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-menu__titre p {
+  font-size: 14px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-menu__txt {
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.btn-menu .prix {
+  transition: 0.4s ease-in-out;
+  position: relative;
+  right: 10px;
+  font-weight: 800;
+}
+.btn-menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 60px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #99E2D0;
+  transition: all 0.4s ease-in-out;
+}
+.btn-menu span i {
+  background-color: #99E2D0;
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 374px) {
   .btn__fonctionnement button {
     width: 270px;

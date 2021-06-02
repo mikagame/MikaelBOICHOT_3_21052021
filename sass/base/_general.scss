@@ -40,9 +40,9 @@ h1,h2,h3,p,a {
         margin: 0 10px 0 0;
         font-size: 14px;
     }
-    i {
+
+    &__title i  {
         font-size: 25px;
-        
         position:absolute;
         right: 35px;
         margin-bottom: 5px;
