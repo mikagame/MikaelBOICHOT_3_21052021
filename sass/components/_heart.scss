@@ -1,0 +1,34 @@
+/*** heart & heart animation ***/
+
+.heart {   
+    i {
+        font-size: 25px;
+        transition: all 0.4s ease-in-out;
+    }   
+    .far {  
+        position: relative; 
+        left: 20px; 
+    }
+    .fas {      
+        position: relative;  
+        right: 10px;
+        opacity: 0;
+        background: -webkit-linear-gradient(90deg, $secondary, $primary);
+        transition: all 0.4s ease-in-out;
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover {
+        .far {
+            opacity: 0;
+        }
+        .fas {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+

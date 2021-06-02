@@ -19,20 +19,7 @@
                 margin: 0;
                 font-size: 17px;
             }
-        }
-        i {
-            font-size: 25px; 
-            margin-right: 10px; 
-            transition:  0.3s;
-            &:hover {
-                font-weight: bold;
-                background: -webkit-linear-gradient(90deg, $secondary, $primary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                
-            }  
-        }     
+        }   
     }
     &:hover {
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
@@ -50,8 +37,7 @@
         color: green;
         padding: 5px 10px 5px 10px;
         position: relative;
-        bottom: 155px;
-       
+        bottom: 155px;    
         background-color: $tertiary;
     }
 }
