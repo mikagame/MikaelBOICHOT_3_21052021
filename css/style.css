@@ -373,9 +373,15 @@ h1, h2, h3, p, a {
   opacity: 1;
 }
 
+.menu__heart {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 14px;
+}
 .menu__heart .fas {
   position: relative;
-  right: 30px;
+  bottom: 32px;
   opacity: 0;
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   transition: all 0.4s ease-in-out;
@@ -599,7 +605,7 @@ footer img {
   margin-bottom: 30px;
   padding-top: 35px;
   position: absolute;
-  top: 280px;
+  top: 272px;
   left: 0px;
   width: 100%;
   border-top-left-radius: 30px;

@@ -34,14 +34,17 @@
 }
 
 .menu__heart {
-    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 14px;
     .fas {
         position: relative;
-        right: 30px;
+        bottom: 32px;
         opacity: 0;
         background: -webkit-linear-gradient(90deg, $secondary, $primary);
         transition: all 0.4s ease-in-out;
-        transform: scale(0);
+       transform: scale(0);
         transform-origin: 50% 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -50,7 +53,7 @@
     .far {
         transition: all 0.4s ease-in-out;
     }
-    &:hover {
+   &:hover {
         .fas {
             opacity: 1;
             transform: scale(1);
