@@ -15,7 +15,7 @@ h1, h2, h3, p, a {
 .menu h1 {
   font-family: Shrikhand;
   font-size: 27px;
-  margin: 0 32px 0 20px;
+  margin: 0 9% 0 20px;
 }
 .menu h2 {
   margin: 0 0 20px 0;
@@ -42,6 +42,12 @@ h1, h2, h3, p, a {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 374px) {
+  .menu h1 {
+    font-size: 23px;
+    margin-right: 7%;
+  }
+}
 .card {
   border-radius: 15px;
   background-color: white;
