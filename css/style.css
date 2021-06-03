@@ -309,16 +309,18 @@ h1, h2, h3, p, a {
   }
 }
 @media only screen and (max-width: 767px) {
-  .btn-menu:nth-child(2) {
+  .dish--delice .btn-menu:nth-child(2) {
     height: 90px;
   }
-  .btn-menu:nth-child(2) h3:first-child {
+  .dish--delice .btn-menu:nth-child(2) h3 {
     width: 212px;
     font-size: 18px;
     white-space: normal;
   }
-
-  span:first-child {
+  .dish--delice .btn-menu:nth-child(4) {
+    margin-bottom: 25px;
+  }
+  .dish--delice .checkbox span {
     height: 90px;
   }
 }

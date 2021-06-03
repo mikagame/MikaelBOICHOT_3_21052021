@@ -234,22 +234,31 @@
 }
 
 @media only screen and (max-width : 767px) {
-    .btn-menu:nth-child(2) {
-        height: 90px;
-    
-        h3:first-child{
-            width: 212px;
-            font-size: 18px;
-            white-space: normal;
-           
+    .dish--delice {
+        .btn-menu:nth-child(2) {
+                height: 90px;
+             h3{
+                width: 212px;
+                font-size: 18px;
+                white-space: normal;
+                }
+        
         }
-     
+        .btn-menu:nth-child(4) {
+            margin-bottom: 25px;
+        }
+
+        .checkbox span {
+            height: 90px;
+        }
+
     }
+
     
-    span:first-child {
-        height: 90px;
-    }
+     
 }
+
+
 
 @media only screen and (min-width : 435px) {
 
