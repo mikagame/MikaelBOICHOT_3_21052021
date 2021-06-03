@@ -212,6 +212,7 @@ h1, h2, h3, p, a {
   align-items: center;
   height: 70px;
   width: 100%;
+  max-width: 400px;
   margin-bottom: 15px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -223,12 +224,14 @@ h1, h2, h3, p, a {
 .btn-menu:hover i {
   animation: rotation 0.5s ease-in-out;
 }
-.btn-menu:hover .btn-menu__titre, .btn-menu:hover #long {
-  width: 210px;
+.btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
+  width: 60%;
 }
 .btn-menu__titre {
   margin-left: 10px;
-  max-width: 254px;
+  /*** max-width: 254px; ***/
+  width: 73%;
+  transition: 0.5s ease-in-out;
 }
 .btn-menu__titre h3 {
   font-size: 18px;
@@ -236,13 +239,25 @@ h1, h2, h3, p, a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.btn-menu__titre #long {
-  width: 270px;
+.btn-menu__titre p {
+  font-size: 14px;
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.btn-menu__titre p {
+.btn-menu__titre--long {
+  width: 78%;
+  margin-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+.btn-menu__titre--long h3 {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.btn-menu__titre--long p {
   font-size: 14px;
   margin: 0;
   overflow: hidden;
@@ -290,6 +305,11 @@ h1, h2, h3, p, a {
 @media only screen and (max-width: 374px) {
   .btn__fonctionnement button {
     width: 270px;
+  }
+}
+@media only screen and (min-width: 435px) {
+  .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
+    width: 300px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
