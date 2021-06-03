@@ -3,11 +3,12 @@
 .heart {   
     i {
         font-size: 25px;
-        transition: all 0.4s ease-in-out;
+        
     }   
     .far {  
         position: relative; 
         left: 20px; 
+        transition: all 0.4s ease-in-out;
     }
     .fas {      
         position: relative;  
@@ -28,6 +29,33 @@
         .fas {
             transform: scale(1);
             opacity: 1;
+        }
+    }
+}
+
+.menu__heart {
+    .fas {
+        position: relative;
+        right: 30px;
+        opacity: 0;
+        background: -webkit-linear-gradient(90deg, $secondary, $primary);
+        transition: all 0.4s ease-in-out;
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .far {
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+        .fas {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .far {
+            opacity: 0;
         }
     }
 }

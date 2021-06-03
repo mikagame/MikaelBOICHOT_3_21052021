@@ -15,7 +15,7 @@ h1, h2, h3, p, a {
 .menu h1 {
   font-family: Shrikhand;
   font-size: 27px;
-  margin: 0 0px 0 20px;
+  margin: 0 32px 0 20px;
 }
 .menu h2 {
   margin: 0 0 20px 0;
@@ -39,8 +39,6 @@ h1, h2, h3, p, a {
 }
 .menu__title i {
   font-size: 25px;
-  position: absolute;
-  right: 35px;
   margin-bottom: 5px;
 }
 
@@ -339,11 +337,11 @@ h1, h2, h3, p, a {
 /*** heart & heart animation ***/
 .heart i {
   font-size: 25px;
-  transition: all 0.4s ease-in-out;
 }
 .heart .far {
   position: relative;
   left: 20px;
+  transition: all 0.4s ease-in-out;
 }
 .heart .fas {
   position: relative;
@@ -363,6 +361,29 @@ h1, h2, h3, p, a {
 .heart:hover .fas {
   transform: scale(1);
   opacity: 1;
+}
+
+.menu__heart .fas {
+  position: relative;
+  right: 30px;
+  opacity: 0;
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__heart .far {
+  transition: all 0.4s ease-in-out;
+}
+.menu__heart:hover .fas {
+  opacity: 1;
+  transform: scale(1);
+}
+.menu__heart:hover .far {
+  opacity: 0;
 }
 
 /*** fade-in ***/
