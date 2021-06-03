@@ -1,5 +1,7 @@
 /*** loader ***/
-
+body {
+    animation: bg-body 3s;
+}
 
 .loader {
     position: fixed;
@@ -9,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+  background-color: black;
     animation: bg 3s ;
     opacity: 0;
 }
@@ -40,7 +42,7 @@
     }
 }
 
-@keyframes bg {
+@keyframes bg-body {
     0% {
         background-color: black;
         opacity: 0.5;
@@ -49,6 +51,19 @@
     100% {
         background-color: black;
         opacity: 0.5;
+        z-index: 9998;
+    }
+}
+
+@keyframes bg {
+    0% {
+        background-color: black;
+        opacity: 1;
+        z-index: 9998;
+    }
+    100% {
+        background-color: black;
+        opacity: 1;
         z-index: 9998;
     }
 }
