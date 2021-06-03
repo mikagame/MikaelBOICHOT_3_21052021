@@ -217,6 +217,7 @@ h1, h2, h3, p, a {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
+  background-color: white;
 }
 .btn-menu:hover span, .btn-menu:hover .prix {
   transform: translateX(-60px);
@@ -230,7 +231,7 @@ h1, h2, h3, p, a {
 .btn-menu__titre {
   margin-left: 10px;
   /*** max-width: 254px; ***/
-  width: 73%;
+  width: 75.3%;
   transition: 0.5s ease-in-out;
 }
 .btn-menu__titre h3 {
@@ -305,6 +306,20 @@ h1, h2, h3, p, a {
 @media only screen and (max-width: 374px) {
   .btn__fonctionnement button {
     width: 270px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn-menu:nth-child(2) {
+    height: 90px;
+  }
+  .btn-menu:nth-child(2) h3:first-child {
+    width: 212px;
+    font-size: 18px;
+    white-space: normal;
+  }
+
+  span:first-child {
+    height: 90px;
   }
 }
 @media only screen and (min-width: 435px) {
