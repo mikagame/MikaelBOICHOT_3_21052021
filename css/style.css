@@ -359,7 +359,7 @@ h1, h2, h3, p, a {
 
 /*** loader ***/
 body {
-  animation: bg-body 3s;
+  animation: bg-body 3s ease-in-out;
 }
 
 .loader {
@@ -370,19 +370,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  animation: bg 3s;
+  background: linear-gradient(180deg, #FF79DA, #99E2D0, #9356DC);
+  animation: bg 3s ease-in-out;
   opacity: 0;
+}
+.loader h1 {
+  font-family: shrikhand;
+  animation: bg 2s ease-in-out;
+  margin-left: 20px;
+  color: #9356DC;
 }
 
 .circle-loader {
   display: flex;
   z-index: 0;
-  width: 80px;
-  height: 80px;
-  border: 10px solid #99E2D0;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #FF79DA;
+  border-bottom: 10px solid #9356DC;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   opacity: 0;
@@ -402,24 +407,22 @@ body {
 }
 @keyframes bg-body {
   0% {
-    background-color: black;
-    opacity: 0.5;
-    z-index: 9998;
+    padding: 0;
   }
   100% {
-    background-color: black;
-    opacity: 0.5;
-    z-index: 9998;
+    padding: 0;
   }
 }
 @keyframes bg {
   0% {
-    background-color: black;
+    opacity: 1;
+    z-index: 9998;
+  }
+  50% {
     opacity: 1;
     z-index: 9998;
   }
   100% {
-    background-color: black;
     opacity: 1;
     z-index: 9998;
   }

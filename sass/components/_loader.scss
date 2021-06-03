@@ -1,6 +1,6 @@
 /*** loader ***/
 body {
-    animation: bg-body 3s;
+    animation: bg-body 3s ease-in-out;
 }
 
 .loader {
@@ -11,59 +11,72 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  background-color: black;
-    animation: bg 3s ;
+    background:linear-gradient(180deg, $secondary,$tertiary, $primary);
+    animation: bg 3s ease-in-out ;
     opacity: 0;
+    h1 {
+        font-family: shrikhand;
+        animation: bg 2s ease-in-out;
+        margin-left: 20px;
+        color: $primary;
+    }
 }
 
 .circle-loader {
     display: flex;
     z-index: 0;
-    width: 80px;
-    height: 80px;
-    border: 10px solid $tertiary;
-    border-top: 10px solid $primary;
-   border-bottom:10px solid $secondary;
+    width: 50px;
+    height: 50px;
+    border: 10px solid $secondary;
+   
+   border-bottom: 10px solid $primary;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     opacity: 0; 
 }
-
 @keyframes spin {
     0% {
         transform: rotate(0);
         opacity: 1;
-        z-index: 9999;
+        z-index: 9999;        
     }
+   
     100% {
         transform: rotate(360deg);
         opacity: 1;
-        z-index: 9999;
+        z-index: 9999;       
     }
 }
 
 @keyframes bg-body {
     0% {
-        background-color: black;
-        opacity: 0.5;
-        z-index: 9998;
+       
+        padding: 0;
     }
-    100% {
-        background-color: black;
-        opacity: 0.5;
-        z-index: 9998;
+    100% {        
+        padding: 0;
     }
 }
 
 @keyframes bg {
     0% {
-        background-color: black;
+        
         opacity: 1;
         z-index: 9998;
+        
     }
-    100% {
-        background-color: black;
+    50% {
+        
         opacity: 1;
-        z-index: 9998;
+        z-index: 9998; 
+          
+        
+    }
+       
+    100% {
+        
+        opacity: 1;
+        z-index: 9998; 
+       
     }
 }
