@@ -121,21 +121,6 @@ h1, h2, h3, p, a {
   opacity: 0.8;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.btn__menu {
-  border: none;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 12px;
-  margin-bottom: 15px;
-}
-.btn__menu--bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 .btn__command {
   display: flex;
   justify-content: center;
@@ -243,24 +228,26 @@ h1, h2, h3, p, a {
 }
 .btn-menu__titre {
   margin-left: 10px;
-  white-space: nowrap;
   max-width: 254px;
 }
 .btn-menu__titre h3 {
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-menu__titre #long {
   width: 270px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-menu__titre p {
   font-size: 14px;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-menu__txt {
   display: flex;
@@ -339,6 +326,34 @@ h1, h2, h3, p, a {
 .heart:hover .fas {
   transform: scale(1);
   opacity: 1;
+}
+
+.entree, .dish, .dessert {
+  animation: fadein 0.9s forwards ease-in-out;
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.entree {
+  animation-delay: 0.3s;
+}
+
+.dish {
+  animation-delay: 0.6s;
+}
+
+.dessert {
+  animation-delay: 0.9s;
 }
 
 /***header***/
