@@ -47,6 +47,10 @@ h1, h2, h3, p, a {
     font-size: 23px;
     margin-right: 7%;
   }
+
+  .menu__title {
+    padding-bottom: 3px;
+  }
 }
 .card {
   border-radius: 15px;
@@ -272,7 +276,7 @@ h1, h2, h3, p, a {
 .btn-menu__txt {
   display: flex;
   width: 100%;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   flex-shrink: 0;
 }
