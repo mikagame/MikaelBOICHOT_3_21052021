@@ -14,11 +14,18 @@ body {
     background:linear-gradient(180deg, $secondary,$tertiary, $primary);
     animation: bg 3s ease-in-out ;
     opacity: 0;
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     h1 {
         font-family: shrikhand;
         animation: bg 2s ease-in-out;
-        margin-left: 20px;
+        
         color: $primary;
+        
+        
     }
 }
 
