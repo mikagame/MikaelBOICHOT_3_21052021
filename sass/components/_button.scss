@@ -193,12 +193,22 @@
         }
 }
 
-
-
 @media only screen and (max-width : 374px) {
     .btn-fonctionnement button {
         width: 270px;
     }
+}
+
+
+
+@media only screen and (min-width : 435px) {
+
+.btn-menu:hover {
+    .btn-menu__titre , .btn-menu__titre--long {
+        width: 300px;     
+    }
+}
+
 }
 
 @media only screen and (max-width : 767px) {
@@ -220,22 +230,22 @@
     }    
 }
 
-@media only screen and (min-width : 435px) {
-
-.btn-menu:hover {
-    .btn-menu__titre , .btn-menu__titre--long {
-        width: 300px;     
-    }
-}
-
-}
-
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
     .btn-fonctionnement button {
         width: 300px;
         text-align: center;
         margin: 0 10px 0 10px;
     }
+}
+
+@media only screen and (min-width : 1024px) {
+
+    .btn-fonctionnement button {
+        width: 350px;
+        text-align: center;
+        margin: 0 10px 0 10px;
+    }
+
 }
 
 

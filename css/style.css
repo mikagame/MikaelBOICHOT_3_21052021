@@ -84,7 +84,7 @@ h1, h2, h3, p, a {
     z-index: 9998;
   }
 }
-/*** keyframes button menu***/
+/*** keyframes button menu checkbox rotation ***/
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -356,6 +356,11 @@ h1, h2, h3, p, a {
     width: 270px;
   }
 }
+@media only screen and (min-width: 435px) {
+  .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .dish--delice .btn-menu:nth-child(2) {
     height: 90px;
@@ -372,14 +377,16 @@ h1, h2, h3, p, a {
     height: 90px;
   }
 }
-@media only screen and (min-width: 435px) {
-  .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
-    width: 300px;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .btn-fonctionnement button {
     width: 300px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .btn-fonctionnement button {
+    width: 350px;
     text-align: center;
     margin: 0 10px 0 10px;
   }
@@ -648,10 +655,6 @@ footer img {
     column-gap: 30px;
     row-gap: 13px;
   }
-
-  .fonctionnement h2, .restaurants h2 {
-    text-align: center;
-  }
 }
 @media only screen and (min-width: 1180px) {
   .position-card {
@@ -661,6 +664,10 @@ footer img {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
+  }
+
   .menu__flex {
     display: flex;
     justify-content: space-around;
@@ -734,6 +741,7 @@ form input {
   background-color: #f2f2f2;
   position: relative;
   left: 40px;
+  font-size: 16px;
 }
 form input::placeholder {
   text-align: left;
