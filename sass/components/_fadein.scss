@@ -1,6 +1,6 @@
 /*** fade-in ***/
 
-.entree, .dish, .dessert {
+.entree, .dish, .dish--delice, .dessert {
 animation: fadein 0.9s forwards ease-in-out;
 transform: scaleY(0);
 transform-origin: 50% 0%;
@@ -23,7 +23,7 @@ opacity: 0;
 .entree {
     animation-delay: 3.3s;
 }
-.dish {
+.dish, .dish--delice {
     animation-delay: 3.6s;
 }
 .dessert {

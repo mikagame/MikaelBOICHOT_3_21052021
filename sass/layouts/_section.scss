@@ -133,12 +133,19 @@
         .btn-menu__titre, .btn-menu__titre--long {
             width: 55%;
         }
+
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 13px;
+        }
       
     }
 
     
     .entree, .dish, .dish--delice, .dessert {
-        width: 31%;
+        width: 32%;
         
     }
 
@@ -148,6 +155,18 @@
 
     .menu h2 {
         margin-bottom: 35px;
+    }
+
+    .menu h3 {
+        font-size: 16px;
+    }
+
+    .menu p {
+        font-size: 13px;
+    }
+
+    .dish--delice .btn-menu__titre {
+        width: 79%;
     }
 
 

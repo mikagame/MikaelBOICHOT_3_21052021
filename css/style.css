@@ -237,6 +237,12 @@ h1, h2, h3, p, a {
 .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
   width: 60%;
 }
+.btn-menu:hover h3 {
+  font-size: 18px;
+}
+.btn-menu:hover p {
+  font-size: 14px;
+}
 .btn-menu__titre {
   margin-left: 10px;
   /*** max-width: 254px; ***/
@@ -404,7 +410,7 @@ h1, h2, h3, p, a {
 }
 
 /*** fade-in ***/
-.entree, .dish, .dessert {
+.entree, .dish, .dish--delice, .dessert {
   animation: fadein 0.9s forwards ease-in-out;
   transform: scaleY(0);
   transform-origin: 50% 0%;
@@ -424,7 +430,7 @@ h1, h2, h3, p, a {
   animation-delay: 3.3s;
 }
 
-.dish {
+.dish, .dish--delice {
   animation-delay: 3.6s;
 }
 
@@ -682,9 +688,15 @@ footer img {
   .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
     width: 55%;
   }
+  .btn-menu:hover h3 {
+    font-size: 16px;
+  }
+  .btn-menu:hover p {
+    font-size: 13px;
+  }
 
   .entree, .dish, .dish--delice, .dessert {
-    width: 31%;
+    width: 32%;
   }
 
   .btn-menu {
@@ -693,6 +705,18 @@ footer img {
 
   .menu h2 {
     margin-bottom: 35px;
+  }
+
+  .menu h3 {
+    font-size: 16px;
+  }
+
+  .menu p {
+    font-size: 13px;
+  }
+
+  .dish--delice .btn-menu__titre {
+    width: 79%;
   }
 }
 /*** Home ***/
