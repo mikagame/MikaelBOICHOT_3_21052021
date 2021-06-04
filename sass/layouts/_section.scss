@@ -84,7 +84,7 @@
 }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1179px) {
     
     .position-card {
         display: grid;
@@ -102,12 +102,13 @@
 
 } 
 
-@media only screen and (min-width : 1111px) {
+@media only screen and (min-width : 1180px) {
     .position-card {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        
         column-gap: 30px;
+
+      
     }
 
 }
