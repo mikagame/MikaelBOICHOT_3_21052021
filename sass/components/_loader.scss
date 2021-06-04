@@ -1,6 +1,6 @@
 /*** loader ***/
 body {
-    animation: bg-body 3s ease-in-out;
+    animation: bg-body 2s ease-in-out;
 }
 
 .loader {
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background:linear-gradient(180deg, $secondary,$tertiary, $primary);
-    animation: bg 3s ease-in-out ;
+    animation: bg 2s ease-in-out ;
     opacity: 0;
     &__column {
         display: flex;

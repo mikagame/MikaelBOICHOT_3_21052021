@@ -15,9 +15,10 @@
         background: linear-gradient(175deg, $secondary, $primary);
         padding: 15px;     
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease-in-out;
         &:hover {
             opacity: 0.8;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
         }
     }
   
@@ -35,9 +36,10 @@
         background: linear-gradient(175deg, $secondary, $primary);
         padding: 15px;   
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease-in-out;
         &:hover {
             opacity: 0.8;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
         } 
 
     }
@@ -73,7 +75,7 @@
             position: relative;
             left: 20px;
             font-size: 18px;   
-                   
+            transition: 0.4s ease-in-out;    
         }
         p {
             position: relative;
@@ -90,14 +92,14 @@
             box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
             font-weight: 700;
             font-size: 15px;
-            transition: 0.3s;
+            transition: all 0.4s ease-in-out;
             &:hover {
                 cursor: pointer;
                 background-color: rgba(255, 121, 218, 0.2);
-                
-                box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8);
+                box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
                 i {
                     color: $primary;
+                    
                 }
             }            
         }
