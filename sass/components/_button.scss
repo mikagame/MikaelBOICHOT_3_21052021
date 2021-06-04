@@ -1,10 +1,70 @@
-/*** button ***/
+/*** button fonctionnement***/
 
-.btn {        
-    &__home {
+.btn-fonctionnement {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;   
+    span {
+        position: relative;
+        right: 10px;
+        flex-shrink: 0;
+        font-size: 13px;
+        color: white;
+        border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        background-color: $primary;
         display: flex;
         justify-content: center;
-        width: 60%;
+        align-items: center;            
+    }
+    .fa-mobile-alt{
+      margin-right: 49.25px;
+    }
+    .fa-list-ul {
+        margin-right: 43.25px;
+    }
+    .fa-store {
+        margin-right: 40px;  
+    }
+    i {
+        position: relative;
+        left: 20px;
+        font-size: 18px;   
+        transition: 0.4s ease-in-out;    
+    }
+    p {
+        position: relative;
+        left: 40px;
+    }
+    button {   
+        display: flex;
+        align-items: center;        
+        flex-shrink: 0;
+        width: 320px;
+        padding: 20px 0 25px 0;
+        border-radius: 20px;
+        border: none;
+        background-color: #f2f2f2;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);      
+        font-weight: 700;
+        font-size: 15px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            cursor: pointer;           
+            background-color: rgba(255, 121, 218, 0.25);           
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+            i {
+                color: $primary;       
+            }
+        }            
+    }
+} 
+
+/*** button home & command ***/
+.btn {    
+    display: flex;
+        justify-content: center;        
         max-width: 300px;
         margin: auto;
         border-radius: 30px;
@@ -19,103 +79,22 @@
         &:hover {
             opacity: 0.8;
             box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
-        }
+            cursor: pointer;
+        }    
+    &__home {
+        width: 60%;
     }
-  
     &__command {
-        display: flex;
-        justify-content: center;
-        width: 55%;
-        max-width: 300px;
-        margin: auto;
-        border-radius: 30px;
-        border: none;
-        color: white;
-        font-weight: 900; 
-        font-size: 16px;      
-        background: linear-gradient(175deg, $secondary, $primary);
-        padding: 15px;   
-        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s ease-in-out;
-        &:hover {
-            opacity: 0.8;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
-        } 
-
-    }
-    &__fonctionnement {
-        margin-bottom: 30px;
-        display: flex;
-        align-items: center; 
-        
-        span {
-            position: relative;
-            right: 10px;
-            flex-shrink: 0;
-            font-size: 13px;
-            color: white;
-            border-radius: 50%;
-            height: 22px;
-            width: 22px;
-            background-color: $primary;
-            display: flex;
-            justify-content: center;
-            align-items: center;            
-        }
-        .fa-mobile-alt{
-          margin-right: 49.25px;
-        }
-        .fa-list-ul {
-            margin-right: 43.25px;
-        }
-        .fa-store {
-            margin-right: 40px;  
-        }
-        i {
-            position: relative;
-            left: 20px;
-            font-size: 18px;   
-            transition: 0.4s ease-in-out;    
-        }
-        p {
-            position: relative;
-            left: 40px;
-        }
-        button {   
-            display: flex;
-            align-items: center;        
-            flex-shrink: 0;
-            width: 320px;
-            padding: 20px 0 25px 0;
-            border-radius: 20px;
-            border: none;
-            background-color: #f2f2f2;
-            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);      
-            font-weight: 700;
-            font-size: 15px;
-            transition: all 0.4s ease-in-out;
-            &:hover {
-                cursor: pointer;
-                
-                background-color: rgba(255, 121, 218, 0.25);
-                
-                box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
-                i {
-                    color: $primary;
-                    
-                }
-            }            
-        }
-    }
-    &:hover {
-        cursor: pointer;
-    }    
+       width: 55%;
+    }  
 }
 
 .checkbox {
     display: flex;
     align-items: center;
 }
+
+/*** button menu***/
 
 .btn-menu {
         
@@ -128,8 +107,7 @@
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         overflow: hidden;
-        background-color: white;
-        
+        background-color: white;      
         &:hover {
             span, .prix {
             transform: translateX(-60px);
@@ -174,18 +152,15 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                }
-                         
-                p {
-                    
+                }                        
+                p {                 
                     font-size: 14px;
                     margin: 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                 }
-            }
-          
+            }         
         }
         &__txt {
             display: flex;
@@ -216,30 +191,12 @@
             font-size: 20px;
             }       
         }
-
 }
-
-
-
-
-
-
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0) ;
-    }
-    100% {
-        transform: rotate(360deg) ;
-    }
-}
-
-
 
 
 
 @media only screen and (max-width : 374px) {
-    .btn__fonctionnement button {
+    .btn-fonctionnement button {
         width: 270px;
     }
 }
@@ -252,24 +209,16 @@
                 width: 212px;
                 font-size: 18px;
                 white-space: normal;
-                }
-        
+                }       
         }
         .btn-menu:nth-child(4) {
             margin-bottom: 25px;
         }
-
         .checkbox span {
             height: 90px;
         }
-
-    }
-
-    
-     
+    }    
 }
-
-
 
 @media only screen and (min-width : 435px) {
 
@@ -282,7 +231,7 @@
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
-    .btn__fonctionnement button {
+    .btn-fonctionnement button {
         width: 300px;
         text-align: center;
         margin: 0 10px 0 10px;

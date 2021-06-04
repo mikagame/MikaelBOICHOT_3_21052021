@@ -8,18 +8,6 @@ opacity: 0;
 }
 
 
-
-@keyframes fadein {
-    0% {
-        transform: scaleY(0) ;
-       
-    }
-    100%{
-        transform: scaleY(1) ;
-        opacity: 1;
-    }
-}
-
 .entree {
     animation-delay: 2.3s;
 }

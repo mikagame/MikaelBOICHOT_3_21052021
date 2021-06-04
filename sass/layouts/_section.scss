@@ -14,8 +14,6 @@
     align-items: center;
 } 
 
-
-
 /***restaurants***/
 
 .restaurants {
@@ -23,23 +21,16 @@
     padding: 30px 18px 50px 18px;
     a {
     text-decoration: none;
-    color: black;
-
-    
+    color: black;   
     }    
 }
-
-
-
 
 /*** menu ***/
 
 .menu {
     padding: 40px 16px 60px 16px;    
     background-color: #f2f2f2;
-    z-index: 1;
-    
-   
+    z-index: 1;  
     &__title {
         display: flex;
         align-items: center;
@@ -54,7 +45,7 @@
         background-color: #f2f2f2;
     }
 }
-    /*** entree ***/
+
 
 .entree, .dish, .dish--delice, .dessert {
     display:flex;
@@ -70,6 +61,8 @@
 .dessert {
     margin-bottom: 30px;
 }
+
+/*** media ***/
 
 
 @media only screen and (min-width : 768px) {
@@ -128,7 +121,7 @@
         h1, .menu__heart{
         position:relative;
         right: 50px;
-    }
+        }
     }
 
     .btn-menu:hover {
@@ -136,43 +129,37 @@
         .btn-menu__titre, .btn-menu__titre--long {
             width: 55%;
         }
-
         h3 {
             font-size: 16px;
         }
         p {
             font-size: 13px;
-        }
-      
+        }     
     }
-
-    
+   
     .entree, .dish, .dish--delice, .dessert {
-        width: 32%;
-        
+        width: 32%;       
     }
 
     .btn-menu {
         margin-bottom: 25px;
     }
 
-    .menu h2 {
-        margin-bottom: 35px;
-    }
-
-    .menu h3 {
-        font-size: 16px;
-    }
-
-    .menu p {
-        font-size: 13px;
+    .menu {
+        h2 {
+            margin-bottom: 35px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 13px;
+        }
     }
 
     .dish--delice .btn-menu__titre {
         width: 79%;
     }
-
-
 }
 
 
