@@ -593,7 +593,6 @@ footer img {
   color: black;
 }
 
-/*** content ***/
 /*** menu ***/
 .menu {
   padding: 40px 16px 60px 16px;
@@ -615,7 +614,7 @@ footer img {
 }
 
 /*** entree ***/
-.entree, .dish, .dessert {
+.entree, .dish, .dish--delice, .dessert {
   display: flex;
   flex-direction: column;
 }
@@ -624,7 +623,7 @@ footer img {
   margin-bottom: 15px;
 }
 
-.dish {
+.dish, .dish--delice {
   margin-bottom: 25px;
 }
 
@@ -645,7 +644,7 @@ footer img {
     padding: 30px 30px 50px 30px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1110px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .position-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -663,6 +662,37 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .menu__title {
+    justify-content: center;
+  }
+  .menu__title h1, .menu__title .menu__heart {
+    position: relative;
+    right: 50px;
+  }
+
+  .btn-menu:hover .btn-menu__titre, .btn-menu:hover .btn-menu__titre--long {
+    width: 55%;
+  }
+
+  .entree, .dish, .dish--delice, .dessert {
+    width: 31%;
+  }
+
+  .btn-menu {
+    margin-bottom: 25px;
+  }
+
+  .menu h2 {
+    margin-bottom: 35px;
   }
 }
 /*** Home ***/

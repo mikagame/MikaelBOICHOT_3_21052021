@@ -27,7 +27,6 @@
     }    
 }
 
-/*** content ***/
 
 
 
@@ -55,7 +54,7 @@
 }
     /*** entree ***/
 
-.entree, .dish, .dessert {
+.entree, .dish, .dish--delice, .dessert {
     display:flex;
     flex-direction: column;
 }
@@ -63,7 +62,7 @@
 .entree {
     margin-bottom: 15px;
 }
-.dish {
+.dish, .dish--delice {
     margin-bottom: 25px;
 }
 .dessert {
@@ -85,7 +84,7 @@
 }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1110px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
     
     .position-card {
         display: grid;
@@ -95,11 +94,12 @@
         row-gap: 13px;
     }
 
-    
-
     .fonctionnement h2, .restaurants h2 {
         text-align: center;
     }
+
+   
+
 } 
 
 @media only screen and (min-width : 1111px) {
@@ -109,6 +109,47 @@
         
         column-gap: 30px;
     }
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+    .menu__flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .menu__title {
+        justify-content: center;
+        h1, .menu__heart{
+        position:relative;
+        right: 50px;
+    }
+    }
+
+    .btn-menu:hover {
+
+        .btn-menu__titre, .btn-menu__titre--long {
+            width: 55%;
+        }
+      
+    }
+
+    
+    .entree, .dish, .dish--delice, .dessert {
+        width: 31%;
+        
+    }
+
+    .btn-menu {
+        margin-bottom: 25px;
+    }
+
+    .menu h2 {
+        margin-bottom: 35px;
+    }
+
 
 }
 
