@@ -5,13 +5,26 @@ header {
     justify-content: center;
     align-items: center;
         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             left: 20px;
             font-size: 20px;
             text-decoration: none;
             color: black;
+            border-radius: 15px;
+            background-color: transparent;
+            height: 35px;
+            width: 60px;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 color: $primary;
+                background: linear-gradient(180deg, rgba(255, 121, 218, 0.5),
+                                                    rgba(147, 86, 220, 0.5),
+                                                    rgba(153, 226, 208, 0.5));
+                border: 1px solid $primary;
+                font-size: 24px;
             }
         }
         img {
