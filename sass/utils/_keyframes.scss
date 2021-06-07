@@ -22,10 +22,6 @@
        
         padding: 0;
     }
-   
-    100% {        
-        padding: 10;
-    }
 }
 
 @keyframes bg {
@@ -39,8 +35,6 @@
         opacity: 1;
        z-index: 9998;      
    }
-    
-
     100% {   
         opacity: 0;
         z-index: 9998;  

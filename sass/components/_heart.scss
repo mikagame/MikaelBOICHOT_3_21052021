@@ -2,32 +2,31 @@
 
 .heart {   
     i {
-        font-size: 25px;
-        
+        font-size: 25px;    
     }   
     .far {  
         position: relative; 
         left: 20px; 
         transition: all 0.4s ease-in-out;
     }
-    .fas {      
+    .fas {    
         position: relative;  
-        right: 10px;
+        right: 8px;
+        bottom: 2px;
         opacity: 0;
         background: -webkit-linear-gradient(90deg, $secondary, $primary);
         transition: all 0.4s ease-in-out;
-        transform: scale(0);
-        transform-origin: 50% 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
+        transform: scale(0) ;
+        transform-origin: 50% 100%;  
+        -webkit-background-clip: text;  /* avertissement pour enlever erreur validateur css*/
         -webkit-text-fill-color: transparent;
     }
     &:hover {
         .far {
-            opacity: 0;
+            opacity: 0;      
         }
         .fas {
-            transform: scale(1);
+            transform: scale(1) ;
             opacity: 1;
         }
     }
@@ -44,10 +43,9 @@
         opacity: 0;
         background: -webkit-linear-gradient(90deg, $secondary, $primary);
         transition: all 0.4s ease-in-out;
-       transform: scale(0);
-        transform-origin: 50% 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
+        transform: scale(0);
+        transform-origin: 50% 100%;       
+        -webkit-background-clip: text;  /* avertissement pour enlever erreur validateur css*/
         -webkit-text-fill-color: transparent;
     }
     .far {
@@ -63,6 +61,8 @@
         }
     }
 }
+
+
 
 
 
