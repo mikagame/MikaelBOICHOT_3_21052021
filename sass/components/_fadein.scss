@@ -2,8 +2,8 @@
 
 .entree, .dish, .dish--delice, .dessert {
 animation: fadein 0.9s forwards ease-in-out;
-transform: scaleY(0);
-transform-origin: 50% 0%;
+
+transform: translateY(20px);
 opacity: 0;
 }
 

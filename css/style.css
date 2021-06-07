@@ -15,14 +15,6 @@
     z-index: 9999;
   }
 }
-@keyframes bg-body {
-  0% {
-    padding: 0;
-  }
-  60% {
-    padding: 0;
-  }
-}
 @keyframes bg {
   0% {
     opacity: 1;
@@ -49,17 +41,16 @@
 /*** keyframes fade-in***/
 @keyframes fadein {
   0% {
-    transform: scaleY(0);
+    transform: translateY(20px);
   }
   100% {
-    transform: scaleY(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 /***polices***/
 body {
   margin: 0;
-  padding-top: 20px;
 }
 
 h1, h2, h3, p, a {
@@ -457,8 +448,7 @@ h1, h2, h3, p, a {
 /*** fade-in ***/
 .entree, .dish, .dish--delice, .dessert {
   animation: fadein 0.9s forwards ease-in-out;
-  transform: scaleY(0);
-  transform-origin: 50% 0%;
+  transform: translateY(20px);
   opacity: 0;
 }
 
@@ -475,7 +465,7 @@ h1, h2, h3, p, a {
 }
 
 /*** loader ***/
-#home {
+body {
   animation: bg-body 3s ease-in-out;
 }
 
@@ -539,6 +529,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
 }
 header a {
   display: flex;
@@ -549,16 +542,10 @@ header a {
   font-size: 20px;
   text-decoration: none;
   color: black;
-  border-radius: 15px;
-  background-color: transparent;
-  height: 35px;
-  width: 60px;
   transition: all 0.2s ease-in-out;
 }
 header a:hover {
   color: #9356dc;
-  background: linear-gradient(180deg, rgba(255, 121, 218, 0.5), rgba(147, 86, 220, 0.5), rgba(153, 226, 208, 0.5));
-  border: 1px solid #9356dc;
   font-size: 24px;
 }
 header img {
@@ -697,6 +684,7 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+    padding: 90px 0 90px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -751,6 +739,9 @@ footer img {
   }
 }
 /*** Home ***/
+form {
+  margin-top: 30px;
+}
 form label {
   display: flex;
   align-items: center;

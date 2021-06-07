@@ -92,10 +92,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 30px;
-
-      
+        padding: 90px 0 90px 0;
     }
 
+   
 }
 
 @media only screen and (min-width : 1024px) {

@@ -1,6 +1,7 @@
 /*** Home ***/
 
 form {
+    margin-top: 30px;
         label {
             @include flex-align;
             justify-content: center;
