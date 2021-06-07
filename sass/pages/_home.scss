@@ -2,8 +2,7 @@
 
 form {
         label {
-            display: flex;
-            align-items: center;
+            @include flex-align;
             justify-content: center;
             width: 100%;
             padding: 10px 0 10px 0;

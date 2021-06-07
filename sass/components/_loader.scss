@@ -8,16 +8,15 @@ body {
     z-index: -1;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-align;
+    justify-content: center;    
     background:linear-gradient(180deg, $secondary,$tertiary, $primary);
     animation: bg 3s ease-in-out ;
     opacity: 0;
     &__column {
-        display: flex;
+        @include flex-align;
         flex-direction: column;
-        align-items: center;
+        
     }
     h1 {
         font-family: shrikhand;

@@ -1,59 +1,8 @@
 /*** import SCSS ***/
 /***colors***/
-/***polices***/
+/*** keyframes loader***/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
-body {
-  margin: 0;
-  padding-top: 20px;
-}
-
-h1, h2, h3, p, a {
-  font-family: Roboto;
-}
-
-.menu h1 {
-  font-family: Shrikhand;
-  font-size: 27px;
-  margin: 0 28px 0 18px;
-  white-space: nowrap;
-}
-.menu h2 {
-  margin: 0 0 20px 0;
-  font-size: 17px;
-  font-weight: 400;
-}
-.menu h2 span {
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 5px;
-}
-.menu h3 {
-  margin: 0 0 7px 0;
-}
-.menu .short {
-  width: 65%;
-  text-align: left;
-}
-.menu p {
-  margin: 0 10px 0 0;
-  font-size: 14px;
-}
-.menu__title i {
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-
-@media only screen and (max-width: 374px) {
-  .menu h1 {
-    font-size: 23px;
-    margin-right: 7%;
-  }
-
-  .menu__title {
-    padding-bottom: 3px;
-  }
-}
-/*** keyframes loader***/
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -108,6 +57,57 @@ h1, h2, h3, p, a {
   100% {
     transform: scaleY(1);
     opacity: 1;
+  }
+}
+/***polices***/
+body {
+  margin: 0;
+  padding-top: 20px;
+}
+
+h1, h2, h3, p, a {
+  font-family: Roboto;
+}
+
+.menu h1 {
+  font-family: Shrikhand;
+  font-size: 27px;
+  margin: 0 28px 0 18px;
+  white-space: nowrap;
+}
+.menu h2 {
+  margin: 0 0 20px 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+.menu h2 span {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+.menu h3 {
+  margin: 0 0 7px 0;
+}
+.menu .short {
+  width: 65%;
+  text-align: left;
+}
+.menu p {
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+.menu__title i {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 374px) {
+  .menu h1 {
+    font-size: 23px;
+    margin-right: 7%;
+  }
+
+  .menu__title {
+    padding-bottom: 3px;
   }
 }
 .card {
@@ -183,10 +183,10 @@ h1, h2, h3, p, a {
   border-radius: 50%;
   height: 22px;
   width: 22px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .btn-fonctionnement .fa-mobile-alt {
   margin-right: 49.25px;
@@ -227,7 +227,7 @@ h1, h2, h3, p, a {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .btn-fonctionnement button:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 /*** button home & command ***/
@@ -241,7 +241,7 @@ h1, h2, h3, p, a {
   color: white;
   font-weight: 600;
   font-size: 15px;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356dc);
   padding: 15px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
@@ -411,7 +411,7 @@ h1, h2, h3, p, a {
   position: relative;
   right: 10px;
   opacity: 0;
-  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356dc);
   transition: all 0.4s ease-in-out;
   transform: scale(0);
   transform-origin: 50% 100%;
@@ -437,7 +437,7 @@ h1, h2, h3, p, a {
   position: relative;
   bottom: 32px;
   opacity: 0;
-  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356dc);
   transition: all 0.4s ease-in-out;
   transform: scale(0);
   transform-origin: 50% 100%;
@@ -487,21 +487,21 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #FF79DA, #99E2D0, #9356DC);
+  justify-content: center;
+  background: linear-gradient(180deg, #FF79DA, #99E2D0, #9356dc);
   animation: bg 3s ease-in-out;
   opacity: 0;
 }
 .loader__column {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .loader h1 {
   font-family: shrikhand;
   animation: bg 3s ease-in-out;
-  color: #9356DC;
+  color: #9356dc;
 }
 .loader__column {
   position: relative;
@@ -512,7 +512,7 @@ body {
   display: flex;
   z-index: 0;
   border: 3px solid #FF79DA;
-  border-bottom: 3px solid #9356DC;
+  border-bottom: 3px solid #9356dc;
   border-left: 3px solid transparent;
   border-radius: 50%;
   animation: spin 0.5s linear infinite;
@@ -527,7 +527,7 @@ body {
   display: flex;
   z-index: 0;
   border: 3px solid #FF79DA;
-  border-bottom: 3px solid #9356DC;
+  border-bottom: 3px solid #9356dc;
   border-right: 3px solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
@@ -539,8 +539,8 @@ body {
 /***header***/
 header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 header a {
   display: flex;
@@ -558,9 +558,9 @@ header a {
   transition: all 0.2s ease-in-out;
 }
 header a:hover {
-  color: #9356DC;
+  color: #9356dc;
   background: linear-gradient(180deg, rgba(255, 121, 218, 0.5), rgba(147, 86, 220, 0.5), rgba(153, 226, 208, 0.5));
-  border: 1px solid #9356DC;
+  border: 1px solid #9356dc;
   font-size: 24px;
 }
 header img {
@@ -578,7 +578,7 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 footer .fa-utensils {
   margin-right: 12px;
@@ -620,8 +620,8 @@ footer img {
 
 .group-f {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 /***restaurants***/
@@ -767,7 +767,7 @@ form label {
   border-left: #f2f2f2;
 }
 form label:hover {
-  border: 2px solid #9356DC;
+  border: 2px solid #9356dc;
   border-left: #f2f2f2;
 }
 form i {
@@ -788,12 +788,12 @@ form input::placeholder {
   opacity: 100%;
 }
 form input:focus {
-  outline: #9356DC;
-  border: 1px solid #9356DC;
+  outline: #9356dc;
+  border: 1px solid #9356dc;
 }
 form input:focus::placeholder {
   opacity: 50%;
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .zoneSearch {

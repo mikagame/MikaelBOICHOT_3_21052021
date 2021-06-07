@@ -2,8 +2,7 @@
 
 .btn-fonctionnement {
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;   
+    @include flex-align; 
     span {
         position: relative;
         right: 10px;
@@ -14,9 +13,9 @@
         height: 22px;
         width: 22px;
         background-color: $primary;
-        display: flex;
+        @include flex-align;
         justify-content: center;
-        align-items: center;            
+                  
     }
     .fa-mobile-alt{
       margin-right: 49.25px;
@@ -38,8 +37,7 @@
         left: 40px;
     }
     button {   
-        display: flex;
-        align-items: center;        
+        @include flex-align;      
         flex-shrink: 0;
         width: 320px;
         padding: 20px 0 25px 0;
@@ -90,16 +88,13 @@
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
+    @include flex-align;
 }
 
 /*** button menu***/
 
-.btn-menu {
-        
-        display: flex;
-        align-items: center;
+.btn-menu {        
+        @include flex-align;
         height: 70px;
         width: 100%;
         max-width: 767px;
@@ -132,16 +127,12 @@
           transition: 0.5s ease-in-out;
             h3 {
                 font-size: 18px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                @include text-overflow;
             }      
             p { 
                 font-size: 14px;
                 margin: 0;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                @include text-overflow;
             }
             &--long {
                 width: 78%;
@@ -149,16 +140,12 @@
                 transition: 0.5s ease-in-out;
                 h3 {
                     font-size: 18px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+                    @include text-overflow;
                 }                        
                 p {                 
                     font-size: 14px;
                     margin: 0;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+                    @include text-overflow;
                 }
             }         
         }
@@ -176,8 +163,7 @@
             font-weight: 800;
         }
         span {
-            display: flex;
-            align-items: center;
+            @include flex-align;
             justify-content: center;
             height: 70px;
             width: 60px;

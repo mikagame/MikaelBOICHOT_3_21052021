@@ -1,0 +1,12 @@
+
+
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

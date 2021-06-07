@@ -2,16 +2,14 @@
 
 .fonctionnement {
     margin-bottom: 40px;
-
             h2 {
                 margin: 0 0 35px 20px;
             }
 }
 
 .group-f {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-align;
+    flex-direction: column;   
 } 
 
 /***restaurants***/
@@ -32,8 +30,7 @@
     background-color: #f2f2f2;
     z-index: 1;  
     &__title {
-        display: flex;
-        align-items: center;
+        @include flex-align;
         margin-bottom: 30px;
         padding-top: 35px;
         position: absolute;
