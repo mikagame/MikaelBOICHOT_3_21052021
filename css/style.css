@@ -548,14 +548,26 @@ header a {
   color: black;
   transition: all 0.2s ease-in-out;
 }
-header a:hover {
+header a:hover i {
   color: #9356dc;
   font-size: 24px;
+  animation: back 0.3s;
 }
 header img {
   height: 28px;
 }
 
+@keyframes back {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /*** Footer ***/
 footer {
   color: white;

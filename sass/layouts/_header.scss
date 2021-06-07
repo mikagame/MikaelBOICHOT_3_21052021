@@ -6,6 +6,7 @@ header {
     position: relative;
     top: 20px;
     margin-bottom: 20px;
+    
         a {
             @include flex-align;
             justify-content: center;
@@ -14,16 +15,30 @@ header {
             font-size: 20px;
             text-decoration: none;
             color: black;
-            
             transition: all 0.2s ease-in-out;
-            &:hover {
+            
+            &:hover i{
                 color: $primary;
                 font-size: 24px;
+                animation: back 0.3s;
             }
         }
         img {
             height: 28px;
         }
+}
+
+@keyframes back {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+    
 }
 
 
