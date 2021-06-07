@@ -19,6 +19,13 @@
   0% {
     opacity: 1;
     z-index: 9998;
+    color: #9356dc;
+  }
+  30% {
+    color: #FF79DA;
+  }
+  50% {
+    color: #99E2D0;
   }
   60% {
     opacity: 1;
@@ -465,10 +472,6 @@ h1, h2, h3, p, a {
 }
 
 /*** loader ***/
-body {
-  animation: bg-body 3s ease-in-out;
-}
-
 .loader {
   position: fixed;
   z-index: -1;
@@ -477,7 +480,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #FF79DA, #99E2D0, #9356dc);
+  /* background:linear-gradient(180deg, $secondary,$tertiary, $primary);*/
+  background: black;
   animation: bg 3s ease-in-out;
   opacity: 0;
 }
@@ -764,7 +768,7 @@ form i {
   left: 30px;
 }
 form input {
-  border: none;
+  border: 1px solid transparent;
   background-color: #f2f2f2;
   position: relative;
   left: 40px;
