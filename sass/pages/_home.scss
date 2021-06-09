@@ -3,7 +3,7 @@
 form {
     margin-top: 30px;
         label {
-            @include flex-align;
+            @include flex-align-center;
             justify-content: center;
             width: 100%;
             padding: 10px 0 10px 0;
@@ -11,10 +11,10 @@ form {
             margin-top: 15px;
             background-color: #f2f2f2;
             cursor: text;
-            border: 2px solid transparent;
+            
             border-left: #f2f2f2;
             &:hover {
-               border: 2px solid $primary;
+              
                border-left: #f2f2f2;                
             }
         }
@@ -30,7 +30,7 @@ form {
         left: 40px;   
         font-size: 16px;
         padding: 5px 0 5px 10px;
-        
+        border: 1px solid transparent;
         &::placeholder {            
             text-align:left;
             font-size: 16px;
@@ -44,7 +44,10 @@ form {
                 opacity: 50%;
                 color: $primary;
             }            
-        }                       
+        } 
+        &:hover {
+            border: 1px solid $primary;
+        }                      
     }
 }
 

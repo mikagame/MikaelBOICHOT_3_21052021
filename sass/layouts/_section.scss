@@ -8,7 +8,7 @@
 }
 
 .group-f {
-    @include flex-align;
+    @include flex-align-center;
     flex-direction: column;   
 } 
 
@@ -30,7 +30,7 @@
     background-color: #f2f2f2;
     z-index: 1;  
     &__title {
-        @include flex-align;
+        @include flex-align-center;
         margin-bottom: 30px;
         padding-top: 35px;
         position: absolute;

@@ -1,14 +1,14 @@
 /***header***/
 
 header {
-    @include flex-align;
+    @include flex-align-center;
     justify-content: center;  
     position: relative;
     top: 20px;
     margin-bottom: 20px;
     
         a {
-            @include flex-align;
+            @include flex-align-center;
             justify-content: center;
             position: absolute;
             left: 20px;
@@ -28,18 +28,7 @@ header {
         }
 }
 
-@keyframes back {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(15px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-    
-}
+
 
 
 

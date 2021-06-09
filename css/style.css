@@ -21,11 +21,8 @@
     z-index: 9998;
     color: #9356dc;
   }
-  30% {
-    color: #FF79DA;
-  }
   50% {
-    color: #99E2D0;
+    color: #FF79DA;
   }
   60% {
     opacity: 1;
@@ -53,6 +50,18 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+/*** keyframes header (menu) ***/
+@keyframes back {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 /***polices***/
@@ -494,6 +503,10 @@ h1, h2, h3, p, a {
   font-family: shrikhand;
   animation: bg 3s ease-in-out;
   color: #9356dc;
+  font-size: 25px;
+  margin: 0;
+  position: relative;
+  bottom: 120px;
 }
 .loader__column {
   position: relative;
@@ -509,10 +522,10 @@ h1, h2, h3, p, a {
   border-radius: 50%;
   animation: spin 0.5s linear infinite;
   opacity: 0;
-  height: 70px;
-  width: 70px;
+  height: 170px;
+  width: 170px;
   position: relative;
-  top: 92px;
+  top: 191px;
 }
 
 .circle-loader--big {
@@ -524,8 +537,8 @@ h1, h2, h3, p, a {
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   opacity: 0;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
 }
 
 /***header***/
@@ -557,17 +570,6 @@ header img {
   height: 28px;
 }
 
-@keyframes back {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 /*** Footer ***/
 footer {
   color: white;
@@ -768,11 +770,9 @@ form label {
   margin-top: 15px;
   background-color: #f2f2f2;
   cursor: text;
-  border: 2px solid transparent;
   border-left: #f2f2f2;
 }
 form label:hover {
-  border: 2px solid #9356dc;
   border-left: #f2f2f2;
 }
 form i {
@@ -786,6 +786,7 @@ form input {
   left: 40px;
   font-size: 16px;
   padding: 5px 0 5px 10px;
+  border: 1px solid transparent;
 }
 form input::placeholder {
   text-align: left;
@@ -799,6 +800,9 @@ form input:focus {
 form input:focus::placeholder {
   opacity: 50%;
   color: #9356dc;
+}
+form input:hover {
+  border: 1px solid #9356dc;
 }
 
 .zoneSearch {

@@ -5,21 +5,26 @@
     z-index: -1;
     height: 100%;
     width: 100%;
-    @include flex-align;
+    @include flex-align-center;
     justify-content: center;    
    /* background:linear-gradient(180deg, $secondary,$tertiary, $primary);*/
     background: black;
     animation: bg 3s ease-in-out ;
     opacity: 0;
     &__column {
-        @include flex-align;
+        @include flex-align-center;
         flex-direction: column;
         
     }
     h1 {
         font-family: shrikhand;
         animation: bg 3s ease-in-out;     
-        color: $primary;        
+        color: $primary;   
+        font-size: 25px;   
+        margin: 0;
+        position: relative;
+        bottom: 120px;
+        
     }
     &__column {
         position: relative;
@@ -36,10 +41,10 @@
     border-radius: 50%;
     animation: spin 0.5s linear infinite;
     opacity: 0; 
-    height: 70px;
-    width: 70px; 
+    height: 170px;
+    width: 170px; 
     position: relative;
-    top: 92px
+    top: 191px
 }
 
 .circle-loader--big{
@@ -51,6 +56,6 @@
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
     opacity: 0; 
-    height: 100px;
-    width: 100px; 
+    height: 200px;
+    width: 200px; 
 }
