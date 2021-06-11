@@ -772,9 +772,6 @@ form label {
   cursor: text;
   border-left: #f2f2f2;
 }
-form label:hover {
-  border-left: #f2f2f2;
-}
 form i {
   position: relative;
   left: 30px;
