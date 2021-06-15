@@ -395,15 +395,13 @@ h1, h2, h3, p, a {
     margin: 0 10px 0 10px;
   }
 }
-/*@media only screen and (min-width : 1024px) {
-
-    .btn-fonctionnement button {
-        width: 300px;
-        text-align: center;
-        margin: 0 10px 0 10px;
-    }
-
-}*/
+@media only screen and (min-width: 1024px) {
+  .btn-fonctionnement button {
+    width: 280px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+  }
+}
 /*** heart & heart animation ***/
 .heart i {
   font-size: 25px;
